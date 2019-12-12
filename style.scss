@@ -1,0 +1,1114 @@
+*{
+    margin:0;
+    transition: 0.5s;
+}
+
+
+            legend{
+                border:0;
+            }
+
+            h1{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 3rem; 
+
+                @media(max-width:500px){
+                    font-size:2rem;
+                }
+            }
+
+            h2{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 3.5rem; 
+
+            }
+
+            h3{
+                font-family: 'Fira Sans', sans-serif;
+                font-size:1.5rem;
+            }
+
+            h4{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 1.25rem;
+            }
+            
+            p{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 1rem; 
+            }
+
+            span{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 1rem; 
+                text-decoration: underline;
+            }
+           
+
+
+    .wrapper{
+        width: 100vw;
+        height: auto;
+        overflow: hidden; 
+        display:flex;
+        flex-direction: column;
+        
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        a:visited{
+            text-decoration:none;
+        }
+        
+        
+        button{
+            width: 15vw;
+            height: 8vh;
+            background-color: black;
+            color: white; 
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+            @media(max-width:500px){
+               width: 45vw;
+               height:6vh;
+            }
+
+            }
+
+
+        .hero{
+            align-self: center;
+            width:65vw;
+            height:auto;
+            background-image: contain;
+
+            @media (max-width: 500px){
+            display:none;
+            }
+        }
+        main{
+            width: 100vw;
+            height: auto;
+            overflow: hidden; 
+            display:flex;
+            flex-direction: column;
+
+            nav{
+                width: 100vw;
+                height: 10vh; 
+                background-color: black;
+
+                ul{
+                    list-style: none;
+                    display:flex;
+                    flex-direction:row;
+                    justify-content: center;
+                    align-content: center;
+                    margin: 1vw;
+                    padding: 0;
+                    overflow: hidden;
+                    
+
+                    li{
+                        width: 15vw;
+                        color:white;
+
+                        a, a:visited {
+                            color: white;
+                            text-align: center;
+                            text-decoration: none;
+                        }
+
+                        a:hover{
+                            color:black;
+                            background-color:white;
+                        }
+                    }
+
+                }
+            }
+            .sliderHome{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                .playingNow{
+                    width:100vw;
+                    height:auto;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    @media (max-width:500px){
+                        height:40vh;
+                    }
+
+
+                    .imgNowPlay{
+                        width: 75vw;
+                        height: 60vh;
+                        overflow: hidden;
+                        background-image: url(Assets/home-Playing-Now.jpg);
+                        background-position: center;
+                        background-size: 100%;
+                        
+                        @media (max-width:500px){
+                            height:40vh;
+                            width:90vw;
+                            background-size: 200%;
+                        }
+                    }
+
+                    .nowPlayingText{
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        margin:1vw;
+                        margin-top: 2vw;
+                    }
+                }
+                .allShows{
+                    width:100vw;
+                    height:auto;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    margin:0;
+
+
+                    @media (max-width:500px){
+                        height:40vh;
+                    }
+
+                    .allShowsText{
+                        width: 25vw;
+                        height: 60vh;
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        margin-left: 1vw;
+
+                        @media (max-width:500px){
+                            align-self:flex-start;
+                            width: 60vw;
+                            height: 40vh;
+                        }
+
+
+                    }
+
+                    .imgAllShows{
+                        width: 75vw;
+                        height: 60vh;
+                        overflow: hidden;
+                        background-image: url(Assets/home-All-Shows.jpg);
+                        background-position: center;
+                        background-size: 100%;
+
+
+                        @media (max-width:500px){
+                            align-self:flex-end;
+                            height:40vh;
+                            width:70vw;
+                            background-size: 200%;
+                        }
+                    }
+                }
+                .stageCalendar{
+                    width:100vw;
+                    height:auto;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin:0;
+
+                    @media (max-width:500px){
+                        align-self:flex-end;
+                        height:40vh;
+                        width:100vw;
+                        background-size: 200%;
+                    }
+
+                    .imgStageCal{
+                        width: 75vw;
+                        height: 60vh;
+                        overflow: hidden;
+                        background-image: url(Assets/home-Show-Calendar.jpg);
+                        background-position: center;
+                        background-size: 100%;
+
+                        @media (max-width:500px){
+                            background-color:red;
+                            height:40vh;
+                            width:60vw;
+                            background-size: 150%;
+                        }
+                    }
+
+                    .stageCalText{
+                            width: 25vw;
+                            height: 60vh;
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            margin-left: 1vw;
+
+                            @media (max-width:500px){
+                                height:40vh;
+                                width:50vw;
+                                background-size: 400%;
+                            }
+                    }
+
+                }
+                .stayInformed{
+                    width:100vw;
+                    height:auto;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    // margin:1vw;
+
+                    @media(max-width:500px){
+                        height:40vh;
+                        width:100vw;
+                    }
+                    fieldset{
+                        border:none;
+                    }
+                    .form{
+                        width:25vw;
+                        height: 60vh;
+
+                        @media(max-width:500px){
+                            align-self:flex-start;
+                            height:40vh;
+                            width:60vw;
+                        }
+
+                        #stayUpdated{
+                            display: block;
+                            margin: 1vw;
+                            border: 0;
+
+                            //input>text 
+                            border-bottom: 0.25rem solid black;
+                            font-family: 'Fira Sans', sans-serif;
+                            font-weight:400; 
+                            font-size: 1rem;
+                            
+                            //input>focus
+                            outline:none;
+                            background-color: lightgrey;
+
+                            button{
+                                outline: 1px solid red;
+                            }
+
+                            legend{
+                                border:none;
+                            }
+
+                            
+                            }
+                        }
+                    .imgForm{
+                            width: 75vw;
+                            height: 60vh;
+                            overflow: hidden;
+                            background-image: url(Assets/home-form-image.jpg);
+                            background-position: center;
+                            background-size: 100%;
+
+                            @media(max-width:500px){
+                                height:40vh;
+                                width:60vw;
+                                background-size: 210%;
+                            }
+                        }                
+                }
+
+                }
+            }
+        }
+
+    
+
+    footer{
+            width:100vw;
+            height:30vh;
+            color:white;
+            background-color:black;
+            position:relative;
+
+            @media (max-width:500px){
+                background-color: black;
+                width:100vw;
+                height: 30vh;
+                display: flex;
+                flex-direction:column;
+            }
+
+            .mission{
+                position:absolute;
+                top:2vw;
+                left:2vw;
+                width:20vw;
+                height: 30vh;
+
+                @media (max-width:500px){
+                    width:80vw;
+                    height: auto;
+                    position:relative;
+                    margin:1vw;
+                }
+            }
+
+            .contactUs{
+                position:absolute;
+                top:2vw;
+                right:0;
+                width:15vw;
+                height: 30vh;
+
+                @media (max-width:500px){
+                    width:80vw;
+                    height: auto;
+                    margin: 2.5vw;
+                    position:relative;
+                }
+            }
+        }
+
+    .mobileNav{
+        display:none;
+
+        @media (max-width:500px){
+            display:inline;
+
+            .logoMobile{
+                position:absolute;
+                top:0;
+                right:0;
+                width:35vw;
+                height:5vh;
+                background-image: url(TPLOGO-01.png);
+                background-image:contain;
+                background-size:100%;
+                
+                }
+
+            a{
+
+                width:50vw;
+                height:auto;
+
+                    // .logoMobile{
+                    // position:absolute;
+                    // top:10vw;
+                    // right: 0;
+                    // width:50vw;
+                    // height:10vw;
+                    // background-image:url(TPLOGO-01.png);
+                    // background-image: contain;
+                    // z-index:100;
+                    // }
+            }
+
+            #hideaway{
+                position:relative;
+                    width: 55vw;
+                    height: 35vh;
+            }
+
+            // .logoMobile{
+            //     position:absolute;
+            //     top:0;
+            //     right:5vw;
+            //     width: auto;
+            //     height: 5vh;
+            //     background-color: red;
+            //     overflow: hidden;
+            //     background-image: url(../TPLOGO-01.png);
+            //     background-position: center;
+            //     background-size: 100%;
+            //     z-index:10;
+
+            // }
+
+            .nav{
+                    position:relative;
+                    width: 55vw;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin-top:2vh;
+                    margin-bottom:0;
+                    background-color:black;
+    
+        
+                    ul{
+                        width: 55vw;
+                        height: 30vh;
+                        background-color: black;
+                        list-style: none;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        overflow: hidden;
+        
+                        
+        
+                        li {
+                            width: 45vw;
+                            padding: 1vw;
+        
+                            a {
+                            color: white;
+                            text-align: center;
+                            text-decoration: none;
+                            }
+        
+                            a:hover{
+                                color:black;
+                                background-color:white;
+                            }
+                        }
+        
+                    }
+                }
+            .box{
+                position: absolute;
+                top:0;
+                left:0;
+                display:block;
+                width:10vw;
+                height:5vh;
+                background-image:url(Assets/Hamburger_Ham.png);
+                z-index: 10;
+                color:white;
+                line-height:0.75vw;
+
+                p{
+                    text-align:end;
+                    width: 5vw;
+                    border-bottom: 0.5vw solid white;
+                }
+
+
+            }
+            .boxTwo{
+                position: absolute;
+                top:4vw;
+                left:0;
+                width:10vw;
+                height:5vh;
+                background-color:black;
+                color:white;
+                text-align: end;
+
+                p{
+                    margin-top:2vh;
+                }
+            }
+        }
+    }
+    nav{
+            position:relative;
+            width: 100vw;
+            height: 7vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top:2vh;
+
+            @media (max-width:500px){
+                display:none;
+            }
+
+
+            .logo{
+                align-self: flex-start;
+                width: 17vw;
+                height: 7vh;
+
+                overflow: hidden;
+                background-image: url(../TPLOGO-01.png);
+                background-position: center;
+                background-size: 100%;
+                z-index:10;
+                
+            }
+
+            ul{
+                width: 78vw;
+                height: 7vh;
+                background-color: black;
+                list-style: none;
+                display:flex;
+                flex-direction:row;
+                justify-content: flex-end;
+                align-items: center;
+                overflow: hidden;
+
+                
+
+                li {
+                    width: 10vw;
+                    padding: 1vw;
+
+                    a {
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    }
+
+                    a:hover{
+                        color:black;
+                        background-color:white;
+                    }
+                }
+
+            }
+        }
+
+    button{
+            font-family: 'Fira Sans', sans-serif;
+            background-color: black;
+            color:white;
+            display: block;
+            border: none;
+            padding: 0.5rem;
+            margin-bottom: 1vw;
+            margin-left: 1vw;
+            text-decoration: none;
+            text-align: left;
+            .readMore{
+                width: 5vw;
+                height: 5vh;
+            }
+    
+            .seeStageCal{
+                width: 10vw;
+                height: 5vh;
+            }
+        }
+
+
+        a{
+            text-decoration:none;
+            background-color: rgba(0,0,0,0);
+            color:white;
+        }
+
+        a:hover, button:hover{
+            background-color:white;
+            color:black;
+        }
+
+        a:visited, button:visited{
+            text-decoration:none
+        }
+    
+    .wrapperAllShows{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+    
+    
+            main{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width:100vw;
+                height:auto;
+                padding: 1vw;
+
+                @media (max-width:500px){
+                    flex-direction:column;
+                    padding:0;
+                    margin-top: 8vh;
+                    margin-left:0;
+                }
+    
+                #card{
+                    margin: 1vw;
+                    position: relative;
+                    width: 30vw;
+                    height: 80vh;
+
+                    @media (max-width:500px){
+                        margin-top:5vh;
+                        width:100vw;
+                        height:50vh;
+                        margin-left:0;
+                    }
+                    
+                    
+                    .box{
+                        width: 29vw;
+                        height: 4vh;
+                        background-color:black;
+                        color: white;
+                        padding:0.5vw;
+                        overflow:hidden;
+
+                        @media (max-width:500px){
+                            width:100vw;
+                        }
+                    }
+    
+                    .info{
+                        position: absolute;
+                        color: white;
+                        top:5.5vh;
+                        left: 0.5vw;
+                    }
+ 
+                    .buttons{
+                        position:absolute;
+                        bottom:0;
+                        left:0;
+
+
+                    }
+                
+    
+                }
+    
+                .bare{
+                    overflow: hidden;
+                    background-image: url(../Assets/bare-1.jpeg);
+                    background-position: center;
+                    background-size: 230%;
+                } 
+
+                // .imgbare{
+                //     width: 30vw;
+                //     height: 75vh;
+                //     overflow: hidden;
+                //     background-image: url(Assets/bare-1.jpg);
+                //     background-position: center;
+                //     background-size: 215%; 
+                // }
+
+                .imgSam{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/samurai-1.jpg);
+                    background-position: center;
+                    background-size: 150%;
+                    
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+                    }
+                }
+    
+                .imgMisses{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/nearomisses-1.jpeg);
+                    background-position: center;
+                    background-size: 120%; 
+
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+                    }
+                }
+
+                .imgSleeve{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/chris-1.jpg);
+                    background-position: center;
+                    background-size: 120%;
+                    
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+                    }
+                }
+
+                .imgHamlet{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/forest-of-the-witch-1.jpg);
+                    background-position: center;
+                    background-size: 120%;
+
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+
+                    }
+                }
+
+                .imgRocky{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/rocky-1.jpg);
+                    background-position: center;
+                    background-size: 200%;  
+
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+
+                    }
+                }
+
+                .imgSpoons{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/five-spoons-1.jpg);
+                    background-position: center;
+                    background-size: 100%; 
+
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+
+                    }
+                }
+
+                .imgFurther{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/the-collective-1.jpg);
+                    background-position: center;
+                    background-size: 130%; 
+
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+
+                    }
+                }
+
+                .imgHope{
+                    width: 30vw;
+                    height: 75vh;
+                    overflow: hidden;
+                    background-image: url(Assets/chains-1.jpg);
+                    background-position: center;
+                    background-size: 130%; 
+
+                    @media (max-width:500px){
+                        width:100vw;
+                        height:50vh;
+                    }
+                }
+    
+            }
+    
+            footer{
+                width:100vw;
+                height:30vh;
+                color:white;
+                background-color:black;
+                display:flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+    
+                .mission{
+                    align-self: flex-start;
+                    width:20vw;
+                    height: 30vh;
+                    margin: 1vw;
+                }
+    
+                .contactUs{
+                    width:20vw;
+                    height: 30vh;
+                    margin: 1vw;
+                }
+            }
+        }
+
+    .wrapperShowPages {
+            width: 100vw;
+            height: 92vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+
+        
+          
+        
+            main {
+                width: 100vw;
+                height: auto;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                @media (max-width:500px){
+                    width:100vw;
+                    height:auto;
+                    margin:0;
+                }
+
+                .imgMiss{
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 130%;
+                    background-image: url(Assets/misses-2.jpg);
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                        background-size:170%;
+                    }
+                }
+
+                .imgRocky{
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 140%;
+                    background-image: url(Assets/rocky-1.jpg);
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                    }
+
+                }
+        
+        
+                .imgFurther{
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 150%;
+                    background-image: url(Assets/the-collective-2.jpg);
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                
+                    } 
+
+                }
+
+                .imgBare{
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 120%;
+                    background-image: url(Assets/bare-2.jpg);
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                    }
+                }
+
+                .imgSam{
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 90%;
+                    background-image: url(Assets/samurai-2.jpg);
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                        background-size:170%;
+                    }
+
+                }
+
+
+                .imgHope{
+                    display:block;
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 100%;
+                    background-image: url(Assets/chains-1.jpg);
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                        background-size: 95%;
+                
+                    } 
+
+                }
+
+                .imgMagic{
+                    display:block;
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 100%;
+                    background-image: url(Assets/chris-1.jpg);
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                        // background-size:180%;
+                    }
+                }
+
+                .imgSpoons{
+                    display:block;
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 100%;
+                    background-image: url(Assets/five-spoons-1.jpg);
+                
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                        background-size: 90%;
+                    } 
+                }
+
+                .imgHamlet{
+                    display:block;
+                    margin-left: 2vw;
+                    width: 50vw;
+                    height: 95vh;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: 100%;
+                    background-image: url(Assets/forst-of-the-witch.png);
+
+
+                    @media (max-width:500px){
+                        position:absolute;
+                        width:100vw;
+                        height:200vh;
+                        margin:0;
+                    }
+                }
+
+                
+            
+        
+                .info {
+                    padding: 1vw;
+                    width: 43vw;
+                    height: auto;
+                    background-color:white;
+
+                    h3{
+                        @media (max-width: 500px){
+                            font-size:1.25rem;
+                        }
+                    }
+                    
+                    @media (max-width: 500px){
+                        display:flex;
+                        flex-direction:column;
+                        justify-content: flex-start;
+                        align-items:center;
+                        width:80vw;
+                        height:auto;
+                        position: absolute;
+                        top:20vh;
+                        left: 10vw;
+                        background-color:white;
+                        padding:1vw;
+                    }
+        
+                    .showtimes {
+                        margin-bottom: 2vh;
+
+                        @media (max-width: 500px){
+                            // position:absolute;
+                            // top:60vh;
+                            // left:0;
+                            width:80vw;
+                            height:auto;
+                            background-color:white;
+                            padding: 1vw;
+                            padding-bottom:10vh;
+                        }
+        
+        
+                        .label {
+                            margin-top: 3vh;
+                            text-decoration: underline;
+        
+                        }
+        
+                    }
+                }
+
+                .buttons{
+
+            
+                    @media (max-width:500px){
+                        // position:absolute;
+                        // bottom:-32vw;
+                    }
+
+                    button{
+                        margin-left: 0;
+                        display: inline;
+
+                       
+                    }
+
+                }
+        
+            }
+        }
